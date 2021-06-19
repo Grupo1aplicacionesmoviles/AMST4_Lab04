@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menu">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tx_titulo_menu"
+            android:layout_width="match_parent"
+            android:layout_height="179dp"
+            android:gravity="center"
+            android:text="@string/menu_principal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <Button
+            android:id="@+id/btn_control_sensores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/control_de_sensores" />
+
+        <Button
+            android:id="@+id/btn_historial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/historial_de_pedidos" />
+
+        <Button
+            android:id="@+id/btn_base_priv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/base_privada" />
+
+        <Button
+            android:id="@+id/btn_salir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/salir" />
+
+        <TextView
+            android:id="@+id/tx_grupo_info2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:text="@string/amst_grupo_04"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

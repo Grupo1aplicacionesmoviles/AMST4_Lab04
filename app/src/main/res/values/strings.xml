@@ -4,4 +4,9 @@
     <string name="iniciar_sesi_n">Iniciar Sesión</string>
     <string name="contrase_a">Contraseña</string>
     <string name="usuario">Usuario</string>
+    <string name="menu_principal">Menu principal</string>
+    <string name="control_de_sensores">CONTROL DE SENSORES</string>
+    <string name="historial_de_pedidos">HISTORIAL DE PEDIDOS</string>
+    <string name="base_privada">BASE PRIVADA</string>
+    <string name="salir">SALIR</string>
 </resources>
