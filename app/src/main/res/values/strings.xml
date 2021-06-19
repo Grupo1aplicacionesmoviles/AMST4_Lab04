@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">AMST4</string>
+    <string name="amst_grupo_04">AMST Grupo 04</string>
+    <string name="iniciar_sesi_n">Iniciar Sesión</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="usuario">Usuario</string>
 </resources>
