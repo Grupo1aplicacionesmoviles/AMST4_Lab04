@@ -24,7 +24,7 @@
             android:id="@+id/btn_control_sensores"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="revisarSensores"
+            android:onClick="toView_RedSensores"
             android:text="@string/control_de_sensores" />
 
         <Button
