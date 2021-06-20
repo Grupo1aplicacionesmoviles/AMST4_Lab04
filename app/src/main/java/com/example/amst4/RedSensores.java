@@ -12,6 +12,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
 
 import org.json.JSONObject;
 
@@ -28,6 +29,7 @@ public class RedSensores extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_red_sensores);
+        mQueue = Volley.newRequestQueue(this);
 
         Intent login = getIntent();
         this.token = (String)login.getExtras().get("token");
@@ -67,7 +69,7 @@ public class RedSensores extends AppCompatActivity {
                 return params;
             }
         };
-        mQueue.add(request);
+        this.mQueue.add(request);
 
     }
 
@@ -103,7 +105,7 @@ public class RedSensores extends AppCompatActivity {
                 return params;
             }
         };
-        mQueue.add(request);
+        this.mQueue.add(request);
 
     }
 
@@ -139,7 +141,7 @@ public class RedSensores extends AppCompatActivity {
                 return params;
             }
         };
-        mQueue.add(request);
+        this.mQueue.add(request);
 
     }
 

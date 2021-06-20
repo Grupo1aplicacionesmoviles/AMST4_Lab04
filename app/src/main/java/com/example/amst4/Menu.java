@@ -19,17 +19,15 @@ public class Menu extends AppCompatActivity {
         this.token = (String)login.getExtras().get("token");
     }
 
-    public void Salir(View v){
+    public void salir(View v){
         this.finish();
         System.exit(0);
     }
 
-    public void toView_RedSensores(String token){
+    public void toView_RedSensores(View v){
         Intent red_sensores = new Intent(getBaseContext(),RedSensores.class);
-        red_sensores.putExtra("token", token);
+        red_sensores.putExtra("token", this.token);
         startActivity(red_sensores);
     }
 
-    public void salir(View v){
-    }
 }

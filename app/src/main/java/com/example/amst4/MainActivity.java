@@ -14,6 +14,7 @@ import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
 
 import org.json.JSONObject;
 
@@ -28,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        mQueue = Volley.newRequestQueue(this);
+
     }
 
     public void irMenuPrincipal(View v){
@@ -82,6 +85,6 @@ public class MainActivity extends AppCompatActivity {
                         alertDialog.show();
                         }
                     });
-                    mQueue.add(request);
+        mQueue.add(request);
         }
     }
