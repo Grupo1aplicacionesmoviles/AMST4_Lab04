@@ -19,9 +19,15 @@ public class Menu extends AppCompatActivity {
         this.token = (String)login.getExtras().get("token");
     }
 
-    public void salir(View v){
+
+    public void salir(View v){//Comportamiento extraño, no siempre redirige al main
         this.finish();
         System.exit(0);
+    }
+
+    public void toView_Main(View v){
+        Intent main = new Intent(getBaseContext(),MainActivity.class);
+        startActivity(main);
     }
 
     public void toView_RedSensores(View v){

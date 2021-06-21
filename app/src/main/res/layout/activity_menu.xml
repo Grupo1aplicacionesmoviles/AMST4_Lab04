@@ -43,7 +43,7 @@
             android:id="@+id/btn_salir"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="salir"
+            android:onClick="toView_Main"
             android:text="@string/salir"
             app:backgroundTint="#E91E63" />
 
