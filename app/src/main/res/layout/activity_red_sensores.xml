@@ -34,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:text="Lectura de Sensores"
-                android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
         </LinearLayout>
 
         <LinearLayout
@@ -47,11 +47,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/logo" />
+                app:srcCompat="@drawable/temp" />
 
             <TextView
                 android:id="@+id/textView_temp"
-                android:layout_width="500sp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
@@ -80,11 +80,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/logo" />
+                app:srcCompat="@drawable/humedad" />
 
             <TextView
                 android:id="@+id/textView_humedad"
-                android:layout_width="500sp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
@@ -113,11 +113,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/logo" />
+                app:srcCompat="@drawable/peso" />
 
             <TextView
                 android:id="@+id/textView_peso"
-                android:layout_width="500sp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:gravity="center"
@@ -134,6 +134,14 @@
                 android:textSize="16sp"
                 android:textStyle="bold|italic" />
         </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_salir2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="toView_MenuPrincipal"
+            android:text="@string/menu_principal"
+            app:backgroundTint="#3F51B5" />
 
         <TextView
             android:id="@+id/tx_grupo_info3"

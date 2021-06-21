@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import com.android.volley.AuthFailureError;
@@ -149,5 +150,10 @@ public class RedSensores extends AppCompatActivity {
         presentarTemperatura();
         presentarHumedad();
         presentarPeso();
+    }
+
+    public void toView_MenuPrincipal(View v){//Enviando el token a traves de las vistas Main->Menu
+        Intent menuPrincipal = new Intent(getBaseContext(), Menu.class);
+        startActivity(menuPrincipal);
     }
 }
