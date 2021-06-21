@@ -30,16 +30,22 @@
             android:layout_width="match_parent"
             android:layout_height="179dp"
             android:gravity="center"
-            android:text="Bienvenido "
+            android:hint="Receptor de señal de sensores"
             android:textAppearance="@style/TextAppearance.AppCompat.Display1" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="175sp"
+            app:srcCompat="@drawable/detector" />
 
         <EditText
             android:id="@+id/tx_usuario"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="@string/usuario" />
+            android:hint="@string/usuario"
+            android:inputType="text" />
 
         <EditText
             android:id="@+id/tx_pass"
