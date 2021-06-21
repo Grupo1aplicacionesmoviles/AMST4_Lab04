@@ -121,7 +121,7 @@ public class RedSensores extends AppCompatActivity {
                     public void onResponse(JSONObject response) {
                         System.out.println(response);
                         try {
-                            pesoValue.setText(response.getString("peso")+ "g");
+                            pesoValue.setText(response.getString("peso")+ " g");
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
@@ -152,8 +152,10 @@ public class RedSensores extends AppCompatActivity {
         presentarPeso();
     }
 
-    public void toView_MenuPrincipal(View v){//Enviando el token a traves de las vistas Main->Menu
+    public void toView_MenuPrincipal(View v){
         Intent menuPrincipal = new Intent(getBaseContext(), Menu.class);
+        menuPrincipal.putExtra("token", this.token);//SI NO MANDO EL TOKEN SE CRASHEA
         startActivity(menuPrincipal);
     }
+
 }
