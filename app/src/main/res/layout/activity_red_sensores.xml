@@ -56,7 +56,8 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="TEMPERATURA"
-                android:textSize="16sp" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/textView_val_temp"
@@ -89,7 +90,8 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="HUMEDAD"
-                android:textSize="16sp" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/textView_val_humedad"
@@ -122,7 +124,8 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="PESO"
-                android:textSize="16sp" />
+                android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                android:textSize="12sp" />
 
             <TextView
                 android:id="@+id/textView_val_peso"
