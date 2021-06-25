@@ -2,10 +2,12 @@ package com.example.amst4;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
@@ -157,5 +159,12 @@ public class RedSensores extends AppCompatActivity {
         menuPrincipal.putExtra("token", this.token);//SI NO MANDO EL TOKEN SE CRASHEA
         startActivity(menuPrincipal);
     }
+
+    public void toView_Envio_Temperatura(View v){
+        Intent envio = new Intent(getBaseContext(), EnvioTemperatura.class);
+        envio.putExtra("token", this.token);//SI NO MANDO EL TOKEN SE CRASHEA
+        startActivity(envio);
+    }
+
 
 }
